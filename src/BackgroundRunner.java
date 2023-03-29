@@ -19,11 +19,19 @@ public class BackgroundRunner extends JPanel {
     }
     /@Override
     public void paintComponent(Graphics g) {
-        //super.paintComponent(g);
-        g.drawRect(0, 0, 600, 600);
+       g.drawRect(0, 0, 600, 600);
         g.setColor(Color.BLACK);
         g.fillRect(0,0,600,600);
+        g.fillRect(0,0,2000,2000);
+        g.setColor(new Color(108, 236, 0, 179));
+        Font title = new Font("Century", Font.BOLD,50);
+        g.setFont(title);
+        g.drawString("CENTIPEDE", 825,70);
+        g.setColor(Color.WHITE);
+        g.drawRect(500,100,1000,1000);
 
+        Centipede c = new Centipede(10, Color.WHITE);
+        c.draw(g);
     }
 
     public static void main(String[] args) throws InterruptedException {
