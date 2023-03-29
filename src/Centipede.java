@@ -21,8 +21,8 @@ public class Centipede {
     }
     public void draw(Graphics g) {
         for(int n =0;n<length;n++){
-            g.drawOval(x+(n*10), y, 10, 10);
-            g.fillOval(x+(n*10), y, 10, 10);
+            g.drawOval(500+(n*50), 100, 50, 50);
+            g.fillOval(500+(n*50), 100, 50, 50);
             g.setColor(col);
         }
 
